@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0%; 
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 175%;
+}
+
+/*p#sub{
+  position: relative;
+  top:0px;
+  right: 0px;
+  
+}*/
+p {
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 3%;
+  font-family: Helvetica;
+  color: white;
+}
+
+.col-md-3, .col-md-6 {/*gets implemented for @media (max-width: 767px*/
+  margin:2%;
+  background-color: #A52A2A;
+  /*width: auto !important;*/
+}
+
+.row {
+
+  width: 100%;
+}
+
+span{  
+  border: 1px black solid;
+  float: right;
+  width: 30%;
+  text-align: center;
+  font-size: 125%;
+}
+#sub1{
+  background-color: pink;
+}
+#sub2{
+  background-color: green;
+}
+#sub3{
+  background-color: blue;
+}
+/********** Large devices only **********/
+@media screen and (min-width: 992px) {
+  .col-lg-3, .col-lg-6 {
+    float: left;
+    border: 1px solid green;
+    margin:2%;
+    background-color: #A52A2A;
+  }
+  .col-lg-3 {
+    width: 29.33%;
+
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+}
+
+/********** Medium devices only **********/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .col-md-3, .col-md-6 {
+    float: left;
+    border: 1px solid green;
+    margin:2%;
+    background-color: #A52A2A;
+  }
+  .col-md-3 {
+    width: 29.33%;
+    background-color: #A52A2A;
+  }
+  .col-md-6 {
+    width: 46%;
+  }
+
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>test</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0%; 
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 175%;
+}
+
+/*p#sub{
+  position: relative;
+  top:0px;
+  right: 0px;
+  
+}*/
+p {
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 3%;
+  font-family: Helvetica;
+  color: white;
+}
+/*gets implemented for @media (max-width: 767px*/
+.col-md-3, .col-md-6 {
+  margin:2%;
+  background-color: #A52A2A;
+}
+
+.row {
+
+  width: 100%;
+}
+
+span{  
+  border: 1px black solid;
+  float: right;
+  width: 30%;
+  text-align: center;
+  font-size: 125%;
+}
+#sub1{
+  background-color: pink;
+}
+#sub2{
+  background-color: green;
+}
+#sub3{
+  background-color: blue;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-3, .col-lg-6 {
+    float: left;
+    border: 1px solid green;
+    margin:2%;
+    background-color: #A52A2A;
+  }
+  .col-lg-3 {
+    width: 29.33%;
+
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-3, .col-md-6 {
+    float: left;
+    border: 1px solid green;
+    margin:2%;
+    background-color: #A52A2A;
+  }
+  .col-md-3 {
+    width: 29.33%;
+    
+  }
+  .col-md-6 {
+    width: 46%;
+  }
+
+
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+
+<div class="row">
+  <div class="col-lg-3 col-md-6">
+    <span id='sub1'>Chicken</span>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididnt ut labore et dolore magna aliqua. </p>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <span id='sub2'>Beef</span>
+    <p>Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.</p>
+  </div>
+  <div class="col-lg-3 col-md-6">
+    <span id='sub3'>Sushi</span>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. </p>
+  </div>
+</div>
+
+</body>
+</html>
